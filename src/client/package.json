@@ -1,0 +1,37 @@
+{
+  "name": "node-client-midi-player",
+  "version": "1.0.0",
+  "description": "receives websockets and sends MIDI signals",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelienkrieger/plants-biosignals.git"
+  },
+  "author": "Aurélien Krieger",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/aurelienkrieger/plants-biosignals/issues"
+  },
+  "homepage": "https://github.com/aurelienkrieger/plants-biosignals#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "easymidi": "^3.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "p5": "^1.6.0",
+    "socket.io-client": "^4.7.1"
+  }
+}

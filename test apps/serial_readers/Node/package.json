@@ -1,0 +1,23 @@
+{
+  "name": "node-serial-reader",
+  "version": "1.0.0",
+  "description": "reads incoming serial messages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelienkrieger/plants-biosignals.git"
+  },
+  "author": "Aurélien Krieger",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/aurelienkrieger/plants-biosignals/issues"
+  },
+  "homepage": "https://github.com/aurelienkrieger/plants-biosignals#readme",
+  "dependencies": {
+    "@serialport/parser-readline": "^11.0.0",
+    "serialport": "^11.0.0"
+  }
+}

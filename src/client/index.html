@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="node_modules/p5/lib/p5.min.js"></script>
+    <title>MIDI Player</title>
+  </head>
+  <body>
+    <div id="settings">
+      <div class="container">
+        <h2>Client app settings</h2>
+        <form>
+          <div class="form-elem">
+            <input type="radio" id="option1" name="option" value="option1" checked>
+            <label for="option1">PLAY LIVE</label>
+            <input type="radio" id="option2" name="option" value="option2">
+            <label for="option2">PLAY BACK</label>
+          </div>
+
+          <div class="form-elem" id="ip-address-field">
+            <label for="ip-address">IP Address:</label>
+            <input type="text" id="ip-address" name="ip-address" placeholder="ip address server">
+          </div>
+
+          <div class="form-elem" id="file-field">
+            <label for="file">Select Recording:</label>
+            <input type="file" id="file" name="file">
+          </div>
+
+          <input class="form-elem" id="launch-button" type="submit" value="Launch">
+        </form>
+      </div>
+    </div>
+    <script src="front.js" defer></script>
+    <script src="visualization.js" defer></script>
+  </body>
+</html>
