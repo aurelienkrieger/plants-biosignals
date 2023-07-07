@@ -1,7 +1,7 @@
 {
   "name": "client-midi-player",
   "version": "1.0.0",
-  "description": "receives websockets and sends MIDI signals",
+  "description": "receives websockets, sends MIDI signals and create data visualization",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
