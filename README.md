@@ -42,7 +42,7 @@ npm install
 npm start
 ```
 3. Visit the address http://ip:3000 from any device connected to the local network (where ip is the IP address of the server on the local network)
-4. In order to setup the play live mode in the client application, determine the  IP address of the server on local network
+4. In order to setup the play live mode in the client application, determine the  IP address of the server on local network. Mac command:
 ```
 ipconfig getifaddr en0
 ```
@@ -50,6 +50,45 @@ ipconfig getifaddr en0
 ## Distributions
 
 I have exported the client application in binaries using Electron. 
+
+## Electron-packager
+
+1. Install Electron Packager as a development dependency.
+```
+npm install electron-packager --save-dev
+```
+2.  Package the Electron app 
+
+MacOS
+```
+npx electron-packager . appName --platform=darwin --arch=x64 --out=dist/
+```
+
+Windows
+```
+npx electron-packager . appName --platform=win32 --arch=ia32,x64 --out=dist/
+```
+
+Linux
+```
+npx electron-packager . YourAppName --platform=linux --arch=x64 --out=dist/
+```
+
+## Forge
+
+Only works for the host platform.
+
+1. Install Electron Forge as a development dependency.
+```
+npm install --save-dev @electron-forge/cli
+npx electron-forge import
+```
+
+2. Run the `electron-forge make` command.
+
+```
+npm run make
+```
 
 # Test apps
 

@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(20);
 
   // canvas
   noFill();
@@ -56,12 +56,12 @@ function draw() {
   }
   for(let i = 0; i < dataLog.length; i++){
     let dataPoint = {
-      x: map(dataLog[i].RGB, 0, 255, 50, 450),
+      x: map(dataLog[i].ADC, 0, 60000, 50, 450),
       y: 150 + stepsDataviz * i
     };
     dataviz.fill(255, 0, 0);
-    dataviz.ellipse(dataPoint.x, dataPoint.y, 10, 10);
-    dataviz.fill(255, 0, 0, 100);
+    dataviz.ellipse(dataPoint.x, dataPoint.y, 5, 5);
+    dataviz.fill(255, 0, 0, 50);
     dataviz.ellipse(dataPoint.x, dataPoint.y, 50, 50);
   }
   image(dataviz, 0, 0);
