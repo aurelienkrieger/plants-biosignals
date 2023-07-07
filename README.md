@@ -57,21 +57,28 @@ I have exported the client application in binaries using Electron.
 ```
 npm install electron-packager --save-dev
 ```
-2.  Package the Electron app 
+
+2. Run the start script to install some dependencies
+
+```
+npm start
+```
+
+3.  Package the Electron app 
 
 MacOS
 ```
-npx electron-packager . appName --platform=darwin --arch=x64 --out=dist/
+npx electron-packager . client-midi-player --platform=darwin --arch=x64 --out=dist/
 ```
 
 Windows
 ```
-npx electron-packager . appName --platform=win32 --arch=ia32,x64 --out=dist/
+npx electron-packager . client-midi-player --platform=win32 --arch=ia32,x64 --out=dist/
 ```
 
 Linux
 ```
-npx electron-packager . YourAppName --platform=linux --arch=x64 --out=dist/
+npx electron-packager . client-midi-player --platform=linux --arch=x64 --out=dist/
 ```
 
 ## Forge
@@ -84,7 +91,13 @@ npm install --save-dev @electron-forge/cli
 npx electron-forge import
 ```
 
-2. Run the `electron-forge make` command.
+2. Run the start script to install some dependencies
+
+```
+npm start
+```
+
+3. Run the `electron-forge make` command.
 
 ```
 npm run make
