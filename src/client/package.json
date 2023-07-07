@@ -1,5 +1,5 @@
 {
-  "name": "node-client-midi-player",
+  "name": "client-midi-player",
   "version": "1.0.0",
   "description": "receives websockets and sends MIDI signals",
   "main": "main.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/aurelienkrieger/plants-biosignals.git"
   },
   "author": "Aurélien Krieger",
-  "license": "GPL3",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/aurelienkrieger/plants-biosignals/issues"
   },
