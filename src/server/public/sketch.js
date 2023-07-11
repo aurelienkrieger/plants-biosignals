@@ -10,7 +10,9 @@ function setup() {
 
   sensorData = {
     rawData: "",
-    amplitude: 0,
+    ADC: 0,
+    voltage: 0,
+    RGB: 0,
     pitch: 0
   };
   // Establish a WebSocket connection with the server
@@ -46,11 +48,7 @@ function draw() {
   textSize(20);
   textAlign(LEFT, CENTER);
   let dataText = "";
-  for (const value of Object.values(sensorData.rawData)) {
-    dataText += value;
-    dataText += "  ";
-  }
-  text(dataText, 80, 150);
+  text(sensorData.voltage+" V", 80, 130);
 
   // data vizualisation
   dataviz.clear();
@@ -61,7 +59,7 @@ function draw() {
 
   for(let i = 0; i < dataLog.length; i++){
     let dataPoint = {
-      x: map(dataLog[i].ADC, 0, 60000, 50, 450),
+      x: map(dataLog[i].voltage, 0, 4, 50, 450),
       y: 150 + stepsDataviz * i
     };
     dataviz.fill(255, 0, 0);

@@ -61,12 +61,12 @@ parser.on('data', function (line) {
   // Convert raw data into data object
   const values = line.trim().split(/\s+/);
   values.pop();
-  const pitch = Math.round(mapValue(parseInt(values[2]), 0, 255, 50, 70));
+  const pitch = Math.round(mapValue(parseFloat(values[1]), 0, 5, 50, 70));
   console.log(pitch);
   const dataP = {
     rawData: values,
     ADC: parseInt(values[0]),
-    voltage: parseInt(values[1]),
+    voltage: parseFloat(values[1]),
     RGB: parseInt(values[2]),
     pitch: pitch
   };
