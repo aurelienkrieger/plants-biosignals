@@ -61,7 +61,7 @@ parser.on('data', function (line) {
   // Convert raw data into data object
   const values = line.trim().split(/\s+/);
   values.pop();
-  const pitch = Math.round(mapValue(parseFloat(values[1]), 0, 5, 50, 70));
+  const pitch = Math.round(mapValue(parseFloat(values[1]), 0, 4, 40, 100));
   console.log(pitch);
   const dataP = {
     rawData: values,
