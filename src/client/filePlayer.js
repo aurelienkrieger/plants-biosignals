@@ -29,7 +29,7 @@ class FilePlayer {
       // Convert raw data into data object
       let values = line.trim().split(/\s+/);
       values.pop();
-      const pitch = Math.round(mapValue(parseFloat(values[1]), 0, 4, 40, 100));
+      const pitch = Math.round(this.mapValue(parseFloat(values[1]), 0, 4, 40, 100));
       console.log(pitch);
       const dataP = {
         rawData: values,

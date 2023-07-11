@@ -71,7 +71,7 @@ parser.on('data', function (line) {
     pitch: pitch
   };
   io.emit('sensor-data', dataP);
-  //sendNote(pitch, 300);
+  sendNote(pitch, 300);
 });
 
 // Send MIDI notes

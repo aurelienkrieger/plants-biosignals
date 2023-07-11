@@ -58,13 +58,7 @@ I have exported the client application in binaries using Electron.
 npm install electron-packager --save-dev
 ```
 
-2. Run the start script to install some dependencies
-
-```
-npm start
-```
-
-3.  Package the Electron app 
+2.  Package the Electron app 
 
 MacOS
 ```
